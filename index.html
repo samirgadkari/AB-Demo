@@ -23,6 +23,7 @@
         <form class="experiment1_button">
             This will be replaced too, with a button for the form
         </form>
+        <br/>
         <div class="experiment2_text">
             This content will be replaced by ABalytics
         </div>
@@ -46,6 +47,20 @@
                  'experiment1_text': 'You better click that button...',
                  'experiment1_button':
                        '<input type="button" value="Click me, OR ELSE" onclick="ga(\'send\', \'event\', \'buttonclick\', \'stern\'); alert(\'You will be spared.\');">'
+             }
+         ]
+         experiment2: [
+             {
+                 name: 'variant1',
+                 'experiment1_text': 'You better click that button...',
+                 'experiment1_button':
+                       '<input type="button" value="Click me, OR ELSE" onclick="ga(\'send\', \'event\', \'buttonclick\', \'stern\'); alert(\'You will be spared.\');">'
+             },
+             {
+                 name: 'variant2',
+                 'experiment1_text': 'Pretty please click the button with sugar on top!',
+                 'experiment1_button':
+                       '<input type="button" value="Click me!" onclick="ga(\'send\', \'event\', \'buttonclick\', \'nice\'); alert(\'Thanks!\');">'
              }
          ]
      });
